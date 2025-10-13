@@ -24,7 +24,7 @@ const Programs = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-primary to-background">
+    <section id="programs" className="py-20 px-4 bg-gradient-to-b from-primary to-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold font-ar text-foreground mb-6">

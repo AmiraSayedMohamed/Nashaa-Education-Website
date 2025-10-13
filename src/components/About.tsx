@@ -2,7 +2,7 @@ import aboutImage from "@/assets/about-image.png";
 
 const About = () => {
   return (
-    <section className="py-20 px-4 bg-primary">
+    <section id="about" className="py-20 px-4 bg-primary">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
