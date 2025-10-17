@@ -35,9 +35,9 @@ const Programs = () => {
           </h3>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
-          {/* Programs Cards */}
-          <div className="space-y-8">
+        <div className="grid md:grid-cols-1 gap-12 mb-16">
+          {/* Programs Cards centered */}
+          <div className="space-y-8 max-w-3xl mx-auto">
             {programs.map((program, index) => (
               <div
                 key={index}
@@ -61,14 +61,7 @@ const Programs = () => {
             ))}
           </div>
 
-          {/* Image */}
-          <div className="animate-fade-in flex items-center">
-            <img 
-              src={programsImage} 
-              alt="Learning Programs" 
-              className="w-full h-auto rounded-3xl shadow-2xl"
-            />
-          </div>
+          {/* image removed per design - content centered */}
         </div>
       </div>
     </section>
