@@ -101,8 +101,8 @@ const Courses = () => {
                 {/* Icon */}
                 <div className="mb-6 inline-block">
                   {/* icon background: use primary gradient for the "مغامرة البرمجة" card, otherwise use level color */}
-                  <div className={`bg-gradient-primary p-5 rounded-2xl`}>
-                    <level.icon className="w-10 h-10 text-background" />
+                  <div className={`icon-gradient`}>
+                    <level.icon className="w-10 h-10" />
                   </div>
                 </div>
 

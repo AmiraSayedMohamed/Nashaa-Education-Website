@@ -45,8 +45,8 @@ const WhyChooseUs = () => {
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="mb-6 inline-block">
-                <div className="bg-gradient-primary p-5 rounded-2xl">
-                  <feature.icon className="w-12 h-12 text-background" />
+                <div className="icon-gradient">
+                  <feature.icon className="w-12 h-12" />
                 </div>
               </div>
               

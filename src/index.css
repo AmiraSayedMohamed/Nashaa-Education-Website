@@ -104,6 +104,28 @@ All colors MUST be HSL.
   /* helper class so components using bg-gradient-primary get the correct background */
   .bg-gradient-primary {
     background: var(--gradient-primary);
+    /* icon/text color on top of the gradient should be the dark navy (site background) */
+    color: hsl(var(--background)) !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* svg icons inside gradient containers should use the dark stroke color (lucide uses currentColor) */
+  .bg-gradient-primary svg,
+  .icon-gradient svg {
+    color: hsl(var(--background));
+  }
+
+  /* utility for standalone icons that should appear like the attached image */
+  .icon-gradient {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem;
+    border-radius: 0.75rem;
+    background: var(--gradient-primary);
+    color: hsl(var(--background));
   }
 
   * {

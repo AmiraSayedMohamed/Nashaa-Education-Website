@@ -45,8 +45,8 @@ const Programs = () => {
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="flex items-start gap-6">
-                  <div className="bg-gradient-primary p-4 rounded-2xl">
-                    <program.icon className="w-10 h-10 text-background" />
+                  <div className="icon-gradient">
+                    <program.icon className="w-10 h-10" />
                   </div>
                   <div className="flex-1 space-y-3">
                     <h3 className="text-2xl font-bold font-ar text-foreground">
