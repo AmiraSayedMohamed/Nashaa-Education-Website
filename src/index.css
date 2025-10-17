@@ -44,7 +44,7 @@ All colors MUST be HSL.
     --shadow-glow: 0 0 40px hsl(194 79% 61% / 0.3);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --font-ar: 'AvenirArabic', sans-serif;
-    --font-en: 'AvenirNext', sans-serif;
+  --font-en: 'AvenirNextLTPRO', 'AvenirNext', sans-serif;
   }
 }
 
@@ -83,9 +83,17 @@ All colors MUST be HSL.
   }
 
   /* Additional exact named font requested */
+  /* AvenirNextLTPRO - prefer woff2 -> woff -> otf fallback
+     Place converted files in public/fonts/ with these names:
+     - AVENIRNEXTLTPRO-REGULAR.woff2
+     - AVENIRNEXTLTPRO-REGULAR.woff
+     If those files don't exist, the browser will use the .otf file below.
+  */
   @font-face {
     font-family: 'AvenirNextLTPRO';
-    src: url('/fonts/AVENIRNEXTLTPRO-REGULAR.OTF') format('opentype');
+    src: url('/fonts/AVENIRNEXTLTPRO-REGULAR.woff2') format('woff2'),
+         url('/fonts/AVENIRNEXTLTPRO-REGULAR.woff') format('woff'),
+         url('/fonts/AVENIRNEXTLTPRO-REGULAR.OTF') format('opentype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
