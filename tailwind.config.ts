@@ -50,7 +50,7 @@ export default {
       },
       fontFamily: {
         'en': ['Merriweather', 'serif'],
-        'ar': ['Avenir', 'sans-serif'],
+        'ar': ['AvenirNextLTPRO', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',

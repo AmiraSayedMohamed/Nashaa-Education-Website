@@ -52,7 +52,7 @@ All colors MUST be HSL.
   /* Load local fonts from /fonts (public path) */
   @font-face {
     font-family: 'AvenirArabic';
-    src: url('/fonts/AVENIRARABIC-MEDIUM.OTF') format('opentype');
+    src: url('./assets/fonts/AVENIRARABIC-MEDIUM.OTF') format('opentype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -60,7 +60,7 @@ All colors MUST be HSL.
 
   @font-face {
     font-family: 'AvenirArabic';
-    src: url('/fonts/AVENIRARABIC-HEAVY.OTF') format('opentype');
+    src: url('./assets/fonts/AVENIRARABIC-HEAVY.OTF') format('opentype');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
@@ -68,7 +68,7 @@ All colors MUST be HSL.
 
   @font-face {
     font-family: 'AvenirNext';
-    src: url('/fonts/FONNTS.COM-AVENIR_NEXT_W04_REGULAR.TTF') format('truetype');
+    src: url('./assets/fonts/FONNTS.COM-AVENIR_NEXT_W04_REGULAR.TTF') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -76,7 +76,7 @@ All colors MUST be HSL.
 
   @font-face {
     font-family: 'AvenirNext';
-    src: url('/fonts/FONNTS.COM-AVENIR_NEXT_W05_HEAVY.TTF') format('truetype');
+    src: url('./assets/fonts/FONNTS.COM-AVENIR_NEXT_W05_HEAVY.TTF') format('truetype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -91,9 +91,9 @@ All colors MUST be HSL.
   */
   @font-face {
     font-family: 'AvenirNextLTPRO';
-    src: url('/fonts/AVENIRNEXTLTPRO-REGULAR.woff2') format('woff2'),
-         url('/fonts/AVENIRNEXTLTPRO-REGULAR.woff') format('woff'),
-         url('/fonts/AVENIRNEXTLTPRO-REGULAR.OTF') format('opentype');
+    src: url('./assets/fonts/AVENIRNEXTLTPRO-REGULAR.woff2') format('woff2'),
+         url('./assets/fonts/AVENIRNEXTLTPRO-REGULAR.woff') format('woff'),
+         url('./assets/fonts/AVENIRNEXTLTPRO-REGULAR.OTF') format('opentype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
