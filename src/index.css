@@ -91,19 +91,60 @@ All colors MUST be HSL.
   */
   @font-face {
     font-family: 'AvenirNextLTPRO';
-    src: url('./assets/fonts/AVENIRNEXTLTPRO-REGULAR.woff2') format('woff2'),
-         url('./assets/fonts/AVENIRNEXTLTPRO-REGULAR.woff') format('woff'),
+    src: url('./assets/fonts/avenirnextltpro-regular-webfont.woff2') format('woff2'),
+         url('./assets/fonts/avenirnextltpro-regular-webfont.woff') format('woff'),
          url('./assets/fonts/AVENIRNEXTLTPRO-REGULAR.OTF') format('opentype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
 
+  /* Simple alias font-face as requested (MyFont) — points to the same bundled OTF.
+     You can rename 'MyFont' to any name you prefer and use it in Tailwind / CSS. */
+  @font-face {
+    font-family: 'MyFont';
+    /* prefer woff2 -> woff -> otf fallback */
+    src: url('./assets/fonts/avenirnextltpro-regular-webfont.woff2') format('woff2'),
+         url('./assets/fonts/avenirnextltpro-regular-webfont.woff') format('woff'),
+         url('./assets/fonts/AVENIRNEXTLTPRO-REGULAR.OTF') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  /* Ensure Arabic glyphs and heavier weights are available under the same MyFont family
+     so using 'MyFont' will render Arabic text from the Avenir Arabic OTF files. */
+  @font-face {
+    font-family: 'MyFont';
+    src: url('./assets/fonts/AVENIRARABIC-MEDIUM.OTF') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'MyFont';
+    src: url('./assets/fonts/AVENIRARABIC-HEAVY.OTF') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  /* Also map 700 (font-weight:700) to the heavy Arabic file so Tailwind's font-bold renders with Avenir */
+  @font-face {
+    font-family: 'MyFont';
+    src: url('./assets/fonts/AVENIRARABIC-HEAVY.OTF') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
   /* Utility classes to force Arabic / English fonts where needed */
-  /* Default to Arabic font for the site; use .font-en for English/slab text */
-  body { font-family: var(--font-ar); }
+  /* Default to English font for the site; use .font-ar for Arabic sections */
+  body { font-family: var(--font-en); }
+  /* Arabic font: use MyFont (Avenir) as requested */
   .font-ar { 
-    font-family: var(--font-ar);
+    font-family: 'MyFont', var(--font-ar);
     direction: rtl;
     unicode-bidi: isolate;
   }
